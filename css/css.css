@@ -33,11 +33,10 @@
 	   .grid h2{
 		
 		
-		margin: 20px 20px 20px 0px;
-    	padding: 10px 10px 10px 10px;
-    	background-color: #00000;
+    	font-family: sans-serif;
+		font-family: Poppins;
+    	font-size: 20px;
     	color: #5a6772;
-    	font-size: 22px;
     	text-align: center;
 		
     }
@@ -50,14 +49,15 @@
 		color: #fff;
 		margin:50px auto;
 		padding: 10px 10px 10px 10px;
-		width:250px;
+		width:40%;
+		min-width:100px;
 		
 		
     }
 	.grid #mail:hover{
 		color: #fff;
 		background-color: #2198E8;
-		
+	
 	}
 	.grid #mail a{
 		
@@ -70,31 +70,26 @@
 	
 	
     .grid #question{
-		min-height:100px;
+		min-height:80px;
     	font-family: sans-serif;
 		font-family: Poppins;
-    	font-size: 30px;
+    	font-size: 28px;
     	color: #5a6772;
     	text-align: center;
     }
 
-    .buttons{
-
-    	margin-top: 30px;
-		margin-left: 30px;
-	
+    #buttons{
+		display:flex;
+        flex-wrap:wrap;
     }
 	
 	#picture{
-		
-		
-		
-		
+	
 	}
 
-
     #btn1, #btn2, #btn3, #btn4{
-     
+
+	 text-align: center;
 	 font-family: Poppins;
      background-color: #001554;
      width: 45%;
@@ -112,6 +107,21 @@
     	font-size: 18px;
     }
 
+	#picture{
+
+	
+    	width: 90%;
+    }
+	
+	
+	#picture  img {
+    background-color: #001554;
+	
+	width: 60%;
+	
+	
+	}
+	
     #btn1:hover, #btn2:hover, #btn3:hover, #btn4:hover{
      
      background-color: #2198E8;
@@ -136,18 +146,57 @@
 	font-size:20px;
   }
  
- #myProgress {
-    position: relative;
-	margin:auto;
-    width: 90%;
-    height: 80px;
-    background-color: #5a6772;
+@media (max-width: 750px) {
+    #btn1, #btn2, #btn3, #btn4{
+     font-size: 20px;
+	width: 100%;
+	    }
+	
+	.grid h1{
+    	font-size: 20px;
+    }
+	
+	   .grid h2{
+    	font-size: 20px;
+	
+    }
+	    .grid #question{
+    	font-size: 20px;
+    }
+	
+	.grid #mail{
+		
+		font-size: 18px;
+	}
 }
-#myBar {
-    position: absolute;
-    width: 1%;
-    height: 100%;
-    background-color: #001554;
-}		 
 
-			 
+@media (max-width: 360px) {
+   
+	.quiz{
+		padding: 10px 10px 10px 10px;	
+	}
+	.grid{
+		width:100%;
+		padding: 10px 50px 0px 50px;
+	}
+
+   #btn1, #btn2, #btn3, #btn4{
+		font-size: 13px;
+		width: 100%;
+	}
+	.grid h1{
+    	font-size: 17px;
+    }
+	   .grid h2{
+    	font-size: 14px;	
+    }
+	    .grid #question{
+    	font-size: 13px;
+    }
+	
+		.grid #mail{
+		
+		font-size: 14px;
+	}
+	
+}
